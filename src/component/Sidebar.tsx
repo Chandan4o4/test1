@@ -48,7 +48,7 @@ const Sidebar: React.FC = () => {
             <ul>
               {item.navItem.map((navItem, subIndex) => (
                 <li key={subIndex}>
-                  <Link href={navItem.link} >
+                  <Link href={navItem.link} style={{cursor:'pointer', padding:'5px'}} className="hover:bg-red-100">
                     {navItem.pageLink}
                   </Link>
                 </li>
